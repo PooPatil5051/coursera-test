@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html ng-app="DIApp">
   <head>
     <meta charset="utf-8">
-    <script src="app.js" />
-    <style>
-      body{
-      font-size: 1.5em;
-      }
-    </style>
-    <title>Assignment 2</title>
+    <script src="angular.min.js"/>
+    <script src="app.js"/>
+    <title>Dependency Injection in JS</title>
   </head>
   <body>
-    <h1>Assignment 2! </h1>
-    <div id="lettersCalculator">
-      <div>
-        Your name: <input type="text" id="name">
-      </div>
-      <div id="output"></div>
+  <h1>Dependency Injection in JS</h1>
+
+    <div ng-controller = "DIController">
+    <input type="text" ng-model="name" ng-blur="upper();"/>
     </div>
   </body>
 </html>
